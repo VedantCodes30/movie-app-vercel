@@ -47,25 +47,27 @@ const MovieDetails = () => {
 
   return (
     <PageWrapper>
-      <div className="max-w-6xl mx-auto p-4 movie-details flex flex-wrap justify-evenly items-center gap-3 h-dvh content-center">
-        <img
-          className="max-w-50 border-2 object-cover mb-4 mx-auto"
-          src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
-          alt={movie.title}
-        />
-        <h1 className="text-gradient mb-3">{movie.title}</h1>
-        <p className="text-gradient mb-2">{movie.overview}</p>
-        <p className="text-xs">
-          <span className="text-gradient">Release Date:</span>{" "}
-          {movie.release_date}
-        </p>
-        <p className="text-xs">Rating: {movie.vote_average}</p>
-        <Link
-          to="/"
-          className="bg-purple-600 rounded-2xl p-2 hover:bg-purple-700 text-white px-4 py-2 shadow-md transition inline-block mt-4"
-        >
-          Go Back!
-        </Link>
+        <div className="mx-auto p-4 movie-details flex flex-wrap justify-evenly items-center gap-3 h-dvh content-center">
+        <div className="max-w-[800px] flex flex-col">
+          <img
+            className="max-w-50 border-2 object-cover mb-4 mx-auto"
+            src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+            alt={movie.title}
+          />
+          <h1 className="text-gradient mb-3">{movie.title}</h1>
+          <p className="text-gradient mb-2">{movie.overview}</p>
+          <p className="text-xs">
+            <span className="text-gradient">Release Date:</span>{" "}
+            {movie.release_date}
+          </p>
+          <p className="text-xs">Rating: {movie.vote_average}</p>
+          <Link
+            to="/"
+            className="bg-purple-600 rounded-2xl p-2 hover:bg-purple-700 text-white px-4 py-2 shadow-md transition inline-block mt-4 text-center  size-fit"
+          >
+            Go Back!
+          </Link>
+        </div>
       </div>
     </PageWrapper>
   );
