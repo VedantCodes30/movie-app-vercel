@@ -54,7 +54,7 @@ const Home = () => {
   const loadTrendingMovies = async () => {
     try {
       const response = await fetch(
-        `${API_BASE_URL}/trending/movie/week`,
+        `${API_BASE_URL}/trending/movie/day`,
         API_OPTIONS
       );
       const data = await response.json();

@@ -47,7 +47,7 @@ const MovieDetails = () => {
 
   return (
     <PageWrapper>
-        <div className="mx-auto p-4 movie-details flex flex-wrap justify-evenly items-center gap-3 h-dvh content-center">
+      <div className="mx-auto p-4 movie-details flex flex-wrap justify-evenly items-center gap-3 h-dvh content-center">
         <div className="max-w-[800px] flex flex-col">
           <img
             className="max-w-50 border-2 object-cover mb-4 mx-auto"
