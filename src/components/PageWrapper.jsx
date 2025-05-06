@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
-import Spinner from "./Spinner"; // Import your existing Spinner component
+import Spinner from "./Spinner";
 
 const PageWrapper = ({ children }) => {
   const [isLoading, setIsLoading] = useState(true);
@@ -15,8 +15,8 @@ const PageWrapper = ({ children }) => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      transition={{ duration: 0.2, ease: "easeInOut" }}
-      className=" items-center justify-center "
+      transition={{ duration: 0.3, ease: "easeInOut" }}
+      className="w-full h-full "
     >
       {isLoading ? <Spinner /> : children}
     </motion.div>

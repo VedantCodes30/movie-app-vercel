@@ -17,7 +17,7 @@ const MovieCard = ({
       to={`/movie/${movie_id || id}`}
       className="block hover:scale-105 transition-transform"
     >
-      <div className="movie-card cursor-pointer">
+      <div className="movie-card cursor-pointer ">
         <img
           src={
             poster_path

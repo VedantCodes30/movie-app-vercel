@@ -122,6 +122,14 @@ html {
     }
   }
 
+  .mostSearch {
+    @apply space-y-9;
+
+    & a {
+      @apply grid grid-cols-1 gap-5 xs:grid-cols-1 md:grid-cols-3 lg:grid-cols-4;
+    }
+  }
+
   .details-container {
     @apply max-w-3xl flex flex-col;
   }

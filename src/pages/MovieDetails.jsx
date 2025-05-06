@@ -2,7 +2,6 @@ import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import PageWrapper from "../components/PageWrapper";
-// import MovieTrailer from "../components/MovieTrailer";
 import TrailerPlayer from "../components/TrailerPlayer";
 
 const API_OPTIONS = {
@@ -117,39 +116,6 @@ const MovieDetails = () => {
         </div>
       </div>
     </PageWrapper>
-
-    // <PageWrapper>
-    //   <div className="mx-auto p-4 movie-details flex flex-wrap justify-evenly items-center  h-svh ">
-    //     <div className="details-container max-w-3xl"></div>
-    //     <img
-    //       className="max-w-50 border-2 object-cover mb-4 mx-auto"
-    //       src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
-    //       alt={movie.title}
-    //     />
-
-    //     <h1>
-    //       {movie.title} {movie.origin_country}
-    //     </h1>
-    //     <TrailerPlayer movieId={movie.id} />
-
-    //     <p>{movie.overview}</p>
-
-    //     <div className="movie-content">
-    //       <p>
-    //         <span>Release Date:</span> {movie.release_date}
-    //       </p>
-    //       <p>Rating: {movie.vote_average}</p>
-    //       <p>Original Language: {movie.original_language}</p>
-    //       <p>Original Title: {movie.original_title}</p>
-    //       <Link
-    //         to="/"
-    //         className="bg-purple-600 rounded-2xl p-2 hover:bg-purple-700 text-white px-4  shadow-md transition inline-block  text-center  size-fit"
-    //       >
-    //         Go Back!
-    //       </Link>
-    //     </div>
-    //   </div>
-    // </PageWrapper>
   );
 };
 
