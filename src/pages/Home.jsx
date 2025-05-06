@@ -3,6 +3,7 @@ import PageWrapper from "../components/PageWrapper.jsx";
 import Search from "../components/Search";
 import Spinner from "../components/Spinner";
 import MovieCard from "../components/MovieCard";
+import MostSearched from "../components/MostSearched.jsx";
 import { useDebounce } from "react-use";
 import { updateSearchCount } from "../appwrite.js";
 import { Link } from "react-router-dom";
@@ -90,7 +91,7 @@ const Home = () => {
 
             {trendingMovies.length > 0 && (
               <section className="trending">
-                <h2>Trending Movies</h2>
+                <h2>Trending Movies </h2>
                 <ul>
                   {trendingMovies.map((movie, index) => (
                     <li key={movie.id}>
@@ -106,6 +107,10 @@ const Home = () => {
                 </ul>
               </section>
             )}
+
+            <section className="most-searched trending">
+              <MostSearched />
+            </section>
 
             <section className="all-movies">
               <h2>All Movies</h2>

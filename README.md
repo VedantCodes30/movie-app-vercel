@@ -1,4 +1,4 @@
-# 🎬 MovieFinder App
+# 🎬 Movie Finder App
 
 A sleek, responsive web app that allows users to search, explore, and discover trending and popular movies using the TMDB API.
 
@@ -31,6 +31,12 @@ A sleek, responsive web app that allows users to search, explore, and discover t
 - Each trending movie shows its poster and ranking.
 - Click on any trending poster to view detailed information.
 
+### 2. Most Searched
+
+- Below the search, you’ll find a **Trending Movies** section.
+- Each trending movie shows its poster and ranking.
+- Click on any trending poster to view detailed information.
+
 ### 3. All Movies
 
 - Scroll down to see **All Movies** based on your search or popular movies.
@@ -51,6 +57,9 @@ A sleek, responsive web app that allows users to search, explore, and discover t
 ## ✅ Deployment
 
 - Clone the repo.
+- Create a `.env.local` file.
+- Register on TMDB and Appwrite to get your own API KEYS.
+- Replace API KEYS with your own API KEYS.
 - Set up environment variables for TMDB and Appwrite if you want search tracking.
 - Run `pnpm install` (or `npm install`).
 - Run locally with `pnpm dev`.
