@@ -133,7 +133,7 @@ html {
   }
 
   .movie-details {
-    @apply text-purple-100 bg-[url('/hero-bg.png')] bg-cover bg-center bg-no-repeat p-8;
+    @apply text-purple-100 bg-[url('/hero-bg.webp')] bg-cover bg-center bg-no-repeat p-8;
 
     & img {
       @apply rounded-lg h-auto w-full;

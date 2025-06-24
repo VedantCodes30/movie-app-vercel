@@ -79,7 +79,7 @@ const Home = () => {
         <div className="pattern">
           <div className="wrapper">
             <header>
-              <img src="./hero.png" alt="Hero Banner" />
+              <img src="./hero.webp" alt="Hero Banner" />
               <h1>
                 Movie <span className="text-gradient">Binge!</span> <br />
                 <span className="text-base text-indigo-200">
